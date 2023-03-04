@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+    <title>My App - Sing up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<html>
+   <body text="white" style="background-color:#4b4b61">
+     <main>
+        <div class="px-4 py-3 my-2 text-center">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>
+            <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+            <h1 class="display-6 fw-bold text-primary">Please fill out the form.</h1>            
+          </div>
+        <form method="post" action="{{url_for('signup')}}" enctype="multipart/form-data" class="d-flex justify-content-center">
+            <div class="col-md-6 mx-auto">
+                <div class="form-group text-center">
+                    
+                <input type="text" id="name" name="name" style="max-width: 256px;" placeholder="Name"><br></br>
+                </div>
+                <div class="form-group text-center">
+                    
+                    <input type="email"  id="email" name="email" style="max-width: 256px;" placeholder="Email" required><br></br>
+                </div>
+                <div class="form-group text-center">
+                    
+                    <input type="password"  id="password" name="password" style="max-width: 256px;" placeholder="Password" required>
+                </div>         
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Sign up</button>
+                </div>            
+            </div>
+        </form>
+     </main>      
+   </body>
+</html>
