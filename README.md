@@ -4,4 +4,4 @@ This is the source code for a cloud-based application in Azure Microsoft that pr
 
 All the source code, including the backend side of the web app ([app.py](app.py)) and templates, are included in this. Additionally, [requirements.txt](requirements.txt) is added to include libraries and modules that were used in the app, such as Flask and image processing libraries.
 
-This program was done as an Assignment in ENGR 5710G: Network Computing course instructed by Dr. Mahmoud at Ontario Tech University. 
+This application has been created as an assignment in ENGR 5710G: Network Computing course instructed by Dr. Mahmoud at Ontario Tech University. 
